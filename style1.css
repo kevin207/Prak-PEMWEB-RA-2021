@@ -1,0 +1,51 @@
+*
+{
+	margin: 0;
+}
+
+header
+{
+	text-align: center;
+	background-color: #52D593;
+	padding: 40px;
+}
+
+nav
+{
+	padding: 10px;
+	background-color: gray;
+	text-decoration: none;
+}
+
+a
+{
+	text-decoration: none;
+	color: white;
+	margin-right: 20px;
+}
+
+
+body
+{
+	background-color: #86EFBF;
+}
+
+form
+{
+	margin-top: 20px;
+	margin-left: 20px;
+	
+}
+
+#hasil
+{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#submit
+{
+	margin-top: 10px;
+	width: 100px;
+
+}
