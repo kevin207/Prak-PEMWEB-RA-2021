@@ -17,6 +17,7 @@
 			Daftar harga buah :<br> 
 			- Jambu  : Rp.13.000/kg<br>
 			- Mangga : Rp.15.000/kg<br>
+			- Salak  : Rp.10.000/kg<br>
 		</p>
 
 		<form method="POST">
@@ -25,6 +26,8 @@
 			<input type="number" id="jambu" name="jambu">kg<br>
 			<label for="mangga">Buah Mangga :</label><br>
 			<input type="number" id="mangga" name="mangga">kg<br>
+			<label for="mangga">Buah Salak :</label><br>
+			<input type="number" id="salak" name="salak">kg<br>
 			<input id="submit" type="submit" value="Beli">
 
 		</form> 
@@ -37,26 +40,27 @@
 			{
 				var $tagihan;
 
-				public function beli($a,$b)
+				public function beli($a,$b,$c)
 				{
 					$this->jambu = $a;
 					$this->mangga = $b;
+					$this->salak = $c;
 				}
 
 				public function tagihan()
 				{
-					$this->tagihan =($this->jambu*13000) + ($this->mangga*15000);
+					$this->tagihan =($this->jambu*13000) + ($this->mangga*15000) +  ($this->salak*15000);
 				}
 				
 				public function info()
 				{
-					echo "Buah yang dibeli {$this->jambu}kg jambu dan {$this->mangga}kg mangga dengan total tagihan: Rp. {$this->tagihan}";
+					echo "Buah yang dibeli {$this->jambu}kg jambu, {$this->mangga}kg mangga, dan {$this->salak}kg salak dengan total tagihan: Rp. {$this->tagihan}";
 				}
 
 			}
 
 			$pembeli = new belanja();
-			$pembeli->beli($_POST['jambu'],$_POST['mangga']);
+			$pembeli->beli($_POST['jambu'],$_POST['mangga'],$_POST['salak']);
 			$pembeli->tagihan();
 
 		?>
