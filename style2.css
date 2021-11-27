@@ -1,0 +1,103 @@
+body
+{
+	margin: 0;
+	background-image: url(background.jpg);
+	background-repeat: ;
+
+	font-family: Optima, sans-serif;
+	font-weight: lighter;
+}
+
+.container
+{
+	width: 100vw;
+	height: 100vh;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 80px 1fr 100px;
+	grid-gap: 5px;
+
+	box-sizing: border-box;
+	color: white;
+	font-size: 25px;
+}
+
+.header
+{
+	padding: 10px;
+	background-image: linear-gradient(black, navy);
+}
+
+.header p
+{
+		margin-top: 15px;
+		font-size: 30px;
+		text-align: center;
+}
+
+.main-content
+{
+	margin: 20px 300px 20px 300px;
+	padding: 20px;
+	border: black 1px solid;
+	background-color: white;
+	color: black;
+	border-radius: 20px;
+}
+
+.form
+{
+	padding: 10px
+	border: solid black 1pt;
+	font-size: 12pt;
+}
+
+input
+{
+	width: 150px;
+}
+
+button
+{
+	padding: 10px;
+	width: 100px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+}
+
+.hasil
+{
+	border: solid black 1pt;
+	background-color: #EFF7CB;
+	border-radius: 10px;
+	margin-top: 50px;
+}
+
+.hasil p
+{
+	padding: 10px;
+	visibility: hidden;
+}
+
+.footer
+{
+	padding: 10px;
+ 	background-color: black;
+  	color: white;
+  	background-image: linear-gradient(navy, black);
+}
+
+.footer p
+{
+		margin-top: 25px;
+		font-size: 20px;
+		text-align: center;
+}
+
+.enter
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 160px
+}
